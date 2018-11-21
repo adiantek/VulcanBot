@@ -2,3 +2,7 @@ language: java
 sudo: false
 
 script: "mvn package"
+cache:
+  directories:
+  - .autoconf
+  - $HOME/.m2
