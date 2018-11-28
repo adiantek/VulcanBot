@@ -1,12 +1,12 @@
 package pl.vulcan.uonetmobile.model.entities.dictionaries;
 
-import android.content.Context;
-import com.google.gson.a.c;
+//import android.content.Context;
+//import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 import pl.vulcan.uonetmobile.auxilary.collections.AppState;
-import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.BaseEntity;
 
 @DatabaseTable(tableName = "Teachers")
@@ -33,7 +33,7 @@ public class TeacherEntity extends BaseEntity<TeacherEntity> {
 	@DatabaseField(canBeNull = false, columnName = "LoginId", dataType = DataType.INTEGER)
 	private int i;
 
-	public int a(TeacherEntity teacherEntity) {
+	public int compareTo(TeacherEntity teacherEntity) {
 		if (!(teacherEntity == null || teacherEntity.e == null || teacherEntity.d == null || this.d == null)) {
 			if (this.e != null) {
 				int compareTo = this.e.compareTo(teacherEntity.e);
@@ -43,21 +43,21 @@ public class TeacherEntity extends BaseEntity<TeacherEntity> {
 		return 0;
 	}
 
-	public String a(Context context) {
-		if (this.d != null) {
-			if (this.e != null) {
-				StringBuilder stringBuilder = new StringBuilder();
-				stringBuilder.append(this.e);
-				stringBuilder.append(" ");
-				stringBuilder.append(this.d);
-				return stringBuilder.toString();
-			}
-		}
-		return context.getString(2131492968);
-	}
+//	public String a(Context context) {
+//		if (this.d != null) {
+//			if (this.e != null) {
+//				StringBuilder stringBuilder = new StringBuilder();
+//				stringBuilder.append(this.e);
+//				stringBuilder.append(" ");
+//				stringBuilder.append(this.d);
+//				return stringBuilder.toString();
+//			}
+//		}
+//		return context.getString(2131492968);
+//	}
 
-	public void a(AppState appState, b bVar) {
-	}
+//	public void a(AppState appState, b bVar) {
+//	}
 
 	public Comparable c(int i) {
 		return Integer.valueOf(this.c);
@@ -67,9 +67,9 @@ public class TeacherEntity extends BaseEntity<TeacherEntity> {
 		return true;
 	}
 
-	public /* synthetic */ int compareTo(Object obj) {
-		return a((TeacherEntity) obj);
-	}
+//	public /* synthetic */ int compareTo(Object obj) {
+//		return a((TeacherEntity) obj);
+//	}
 
 	public boolean equals(Object obj) {
 		if (this == obj) {

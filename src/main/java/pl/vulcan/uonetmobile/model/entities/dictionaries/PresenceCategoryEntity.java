@@ -1,11 +1,10 @@
 package pl.vulcan.uonetmobile.model.entities.dictionaries;
 
-import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 import pl.vulcan.uonetmobile.auxilary.collections.AppState;
-import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.BaseEntity;
 
 @DatabaseTable(tableName = "PresenceCategory")
@@ -38,7 +37,7 @@ public class PresenceCategoryEntity extends BaseEntity<PresenceCategoryEntity> {
 	@DatabaseField(canBeNull = false, columnName = "Usuniete", dataType = DataType.BOOLEAN)
 	private boolean k;
 
-	public int a(PresenceCategoryEntity presenceCategoryEntity) {
+	public int compareTo(PresenceCategoryEntity presenceCategoryEntity) {
 		if (presenceCategoryEntity != null) {
 			if (presenceCategoryEntity.d != null) {
 				return this.d == null ? -1 : this.d.compareTo(presenceCategoryEntity.d);
@@ -47,8 +46,8 @@ public class PresenceCategoryEntity extends BaseEntity<PresenceCategoryEntity> {
 		return 1;
 	}
 
-	public void a(AppState appState, b bVar) {
-	}
+//	public void a(AppState appState, b bVar) {
+//	}
 
 	public Comparable c(int i) {
 		return this.d;
@@ -56,10 +55,6 @@ public class PresenceCategoryEntity extends BaseEntity<PresenceCategoryEntity> {
 
 	public boolean c() {
 		return true;
-	}
-
-	public /* synthetic */ int compareTo(Object obj) {
-		return a((PresenceCategoryEntity) obj);
 	}
 
 	public int d() {

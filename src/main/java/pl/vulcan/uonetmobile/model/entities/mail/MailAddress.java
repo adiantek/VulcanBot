@@ -1,6 +1,8 @@
 package pl.vulcan.uonetmobile.model.entities.mail;
 
-import com.google.gson.a.c;
+//import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 
 public class MailAddress implements Serializable {

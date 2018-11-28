@@ -1,13 +1,14 @@
 package pl.vulcan.uonetmobile.model.entities.mail;
 
-import com.google.gson.a.c;
+//import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import java.util.Arrays;
-import me.dm7.barcodescanner.zxing.BuildConfig;
+//import me.dm7.barcodescanner.zxing.BuildConfig;
 import org.joda.time.DateTime;
 import pl.vulcan.uonetmobile.auxilary.collections.AppState;
-import pl.vulcan.uonetmobile.managers.a.b;
+//import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.BaseEntity;
 import pl.vulcan.uonetmobile.model.entities.data.PupilEntity;
 import pl.vulcan.uonetmobile.model.entities.mail.impl.WorkingCopyMailEntity;
@@ -115,8 +116,8 @@ public abstract class MailEntity extends BaseEntity<MailEntity> {
 		this.g = str;
 	}
 
-	public void a(AppState appState, b bVar) {
-	}
+//	public void a(AppState appState, b bVar) {
+//	}
 
 	public void a(boolean z) {
 		this.s = z;

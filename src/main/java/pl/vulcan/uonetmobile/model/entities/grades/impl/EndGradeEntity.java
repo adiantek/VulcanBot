@@ -1,6 +1,7 @@
 package pl.vulcan.uonetmobile.model.entities.grades.impl;
 
 import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;

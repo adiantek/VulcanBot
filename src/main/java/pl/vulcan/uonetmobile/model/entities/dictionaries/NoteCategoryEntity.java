@@ -1,11 +1,9 @@
 package pl.vulcan.uonetmobile.model.entities.dictionaries;
 
-import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
-import pl.vulcan.uonetmobile.auxilary.collections.AppState;
-import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.BaseEntity;
 
 @DatabaseTable(tableName = "NoteCategories")
@@ -23,7 +21,7 @@ public class NoteCategoryEntity extends BaseEntity<NoteCategoryEntity> {
 	@DatabaseField(canBeNull = false, columnName = "Aktywny", dataType = DataType.BOOLEAN)
 	private boolean f;
 
-	public int a(NoteCategoryEntity noteCategoryEntity) {
+	public int compareTo(NoteCategoryEntity noteCategoryEntity) {
 		if (noteCategoryEntity != null) {
 			if (noteCategoryEntity.d != null) {
 				return this.d == null ? -1 : this.d.compareTo(noteCategoryEntity.d);
@@ -32,8 +30,8 @@ public class NoteCategoryEntity extends BaseEntity<NoteCategoryEntity> {
 		return 1;
 	}
 
-	public void a(AppState appState, b bVar) {
-	}
+//	public void a(AppState appState, b bVar) {
+//	}
 
 	public Comparable c(int i) {
 		return Integer.valueOf(this.c);
@@ -43,9 +41,10 @@ public class NoteCategoryEntity extends BaseEntity<NoteCategoryEntity> {
 		return true;
 	}
 
-	public /* synthetic */ int compareTo(Object obj) {
-		return a((NoteCategoryEntity) obj);
-	}
+//	@Override
+//	public int compareTo(NoteCategoryEntity o) {
+//		return a(o);
+//	}
 
 	public String d() {
 		return this.d;
@@ -81,4 +80,5 @@ public class NoteCategoryEntity extends BaseEntity<NoteCategoryEntity> {
 		stringBuilder.append('}');
 		return stringBuilder.toString();
 	}
+
 }

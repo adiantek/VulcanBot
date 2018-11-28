@@ -1,13 +1,14 @@
 package pl.vulcan.uonetmobile.model.entities.grades.impl;
 
-import com.google.gson.a.c;
+//import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
-import me.dm7.barcodescanner.zxing.BuildConfig;
+//import me.dm7.barcodescanner.zxing.BuildConfig;
 import pl.vulcan.uonetmobile.auxilary.collections.AppState;
-import pl.vulcan.uonetmobile.dao.a.a;
-import pl.vulcan.uonetmobile.managers.a.b;
+//import pl.vulcan.uonetmobile.dao.a.a;
+//import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.dictionaries.SubjectEntity;
 import pl.vulcan.uonetmobile.model.entities.grades.SummaryGradeEntity;
 

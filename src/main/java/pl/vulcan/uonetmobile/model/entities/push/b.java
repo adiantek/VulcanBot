@@ -1,6 +1,6 @@
 package pl.vulcan.uonetmobile.model.entities.push;
 
-import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 
 public class b extends a {
 	@SerializedName(value = "pupilid")

@@ -1,11 +1,12 @@
 package pl.vulcan.uonetmobile.model.entities.inner;
 
-import com.google.gson.a.c;
+//import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 import pl.vulcan.uonetmobile.auxilary.collections.AppState;
-import pl.vulcan.uonetmobile.managers.a.b;
+//import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.IModel;
 
 @DatabaseTable(tableName = "GradeClickMemory")
@@ -34,12 +35,12 @@ public class GradeClickMemoryEntity implements IModel<GradeClickMemoryEntity> {
 		return this.c;
 	}
 
-	public int a(GradeClickMemoryEntity gradeClickMemoryEntity) {
+	public int compareTo(GradeClickMemoryEntity gradeClickMemoryEntity) {
 		return this.b - gradeClickMemoryEntity.b;
 	}
 
-	public void a(AppState appState, b bVar) {
-	}
+//	public void a(AppState appState, b bVar) {
+//	}
 
 	public Comparable c(int i) {
 		return Integer.valueOf(this.b);
@@ -49,9 +50,9 @@ public class GradeClickMemoryEntity implements IModel<GradeClickMemoryEntity> {
 		return false;
 	}
 
-	public /* synthetic */ int compareTo(Object obj) {
-		return a((GradeClickMemoryEntity) obj);
-	}
+//	public /* synthetic */ int compareTo(Object obj) {
+//		return a((GradeClickMemoryEntity) obj);
+//	}
 
 	public boolean equals(Object obj) {
 		if (this == obj) {

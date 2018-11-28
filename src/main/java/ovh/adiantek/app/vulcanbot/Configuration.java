@@ -10,4 +10,5 @@ public class Configuration {
 	public String symbol;
 	public String pin;
 	public String token;
+	public String school = "poznan";
 }

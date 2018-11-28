@@ -5,7 +5,7 @@ import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 import org.joda.time.DateTime;
 import pl.vulcan.uonetmobile.auxilary.collections.AppState;
-import pl.vulcan.uonetmobile.managers.a.b;
+//import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.BaseEntity;
 import pl.vulcan.uonetmobile.model.entities.data.PupilEntity;
 
@@ -28,7 +28,7 @@ public class SynchronizationEntity extends BaseEntity<SynchronizationEntity> {
 		this.f = z;
 	}
 
-	public int a(SynchronizationEntity synchronizationEntity) {
+	public int compareTo(SynchronizationEntity synchronizationEntity) {
 		return this.a - synchronizationEntity.a;
 	}
 
@@ -36,8 +36,8 @@ public class SynchronizationEntity extends BaseEntity<SynchronizationEntity> {
 		this.c = j;
 	}
 
-	public void a(AppState appState, b bVar) {
-	}
+//	public void a(AppState appState, b bVar) {
+//	}
 
 	public void a(boolean z) {
 		this.f = z;
@@ -51,9 +51,9 @@ public class SynchronizationEntity extends BaseEntity<SynchronizationEntity> {
 		return true;
 	}
 
-	public /* synthetic */ int compareTo(Object obj) {
-		return a((SynchronizationEntity) obj);
-	}
+//	public /* synthetic */ int compareTo(Object obj) {
+//		return a((SynchronizationEntity) obj);
+//	}
 
 	public DateTime d() {
 		return new DateTime(this.c);

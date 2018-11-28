@@ -1,11 +1,12 @@
 package pl.vulcan.uonetmobile.model.entities.dictionaries;
 
-import com.google.gson.a.c;
+//import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 import pl.vulcan.uonetmobile.auxilary.collections.AppState;
-import pl.vulcan.uonetmobile.managers.a.b;
+//import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.BaseEntity;
 
 @DatabaseTable(tableName = "Subjects")
@@ -26,12 +27,12 @@ public class SubjectEntity extends BaseEntity<SubjectEntity> {
 	@DatabaseField(canBeNull = false, columnName = "Pozycja", dataType = DataType.INTEGER)
 	private int g;
 
-	public int a(SubjectEntity subjectEntity) {
+	public int compareTo(SubjectEntity subjectEntity) {
 		return subjectEntity.e == null ? 1 : this.e == null ? -1 : this.e.compareTo(subjectEntity.e);
 	}
 
-	public void a(AppState appState, b bVar) {
-	}
+//	public void a(AppState appState, b bVar) {
+//	}
 
 	public Comparable c(int i) {
 		return Integer.valueOf(this.c);
@@ -41,9 +42,14 @@ public class SubjectEntity extends BaseEntity<SubjectEntity> {
 		return true;
 	}
 
-	public /* synthetic */ int compareTo(Object obj) {
-		return a((SubjectEntity) obj);
-	}
+//	@Override
+//	public int compareTo(SubjectEntity o) {
+//		return a(o);
+//	}
+
+//	public int compareTo(Object obj) {
+//		return a((SubjectEntity) obj);
+//	}///* synthetic */
 
 	public String d() {
 		return this.e;

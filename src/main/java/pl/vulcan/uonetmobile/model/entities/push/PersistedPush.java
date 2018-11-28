@@ -7,7 +7,7 @@ import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;
 import pl.vulcan.uonetmobile.auxilary.collections.AppState;
 import pl.vulcan.uonetmobile.auxilary.enums.CDCPushEnum;
-import pl.vulcan.uonetmobile.managers.a.b;
+//import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.BaseEntity;
 import pl.vulcan.uonetmobile.model.entities.data.PupilEntity;
 
@@ -28,7 +28,7 @@ public class PersistedPush extends BaseEntity<PersistedPush> {
     @DatabaseField(canBeNull = true, columnName = "LoginId", dataType = DataType.INTEGER)
     private int i;
 
-    public int a(PersistedPush persistedPush) {
+    public int compareTo(PersistedPush persistedPush) {
         return (int) (persistedPush.g - this.g);
     }
 
@@ -70,9 +70,9 @@ public class PersistedPush extends BaseEntity<PersistedPush> {
         return false;
     }
 
-    public /* synthetic */ int compareTo(Object obj) {
-        return a((PersistedPush) obj);
-    }
+//    public /* synthetic */ int compareTo(Object obj) {
+//        return a((PersistedPush) obj);
+//    }
 
     public String d() {
         DateTime dateTime = new DateTime(this.g);

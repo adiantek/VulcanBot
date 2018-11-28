@@ -1,12 +1,13 @@
 package pl.vulcan.uonetmobile.model.entities.teachers;
 
-import android.content.Context;
-import com.google.gson.a.c;
+//import android.content.Context;
+//import com.google.gson.a.c;
+import com.google.gson.annotations.SerializedName;
 import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import pl.vulcan.uonetmobile.auxilary.collections.AppState;
-import pl.vulcan.uonetmobile.dao.a.a;
-import pl.vulcan.uonetmobile.managers.a.b;
+//import pl.vulcan.uonetmobile.dao.a.a;
+//import pl.vulcan.uonetmobile.managers.a.b;
 import pl.vulcan.uonetmobile.model.entities.BaseEntity;
 import pl.vulcan.uonetmobile.model.entities.dictionaries.EmployeeEntity;
 import pl.vulcan.uonetmobile.model.entities.dictionaries.SubjectEntity;
@@ -77,9 +78,9 @@ public abstract class TeacherRelationEntity extends BaseEntity<TeacherRelationEn
         throw new UnsupportedOperationException("Method not decompiled: pl.vulcan.uonetmobile.model.entities.teachers.TeacherRelationEntity.a(pl.vulcan.uonetmobile.model.entities.teachers.TeacherRelationEntity):int");
     }
 
-    public String a(Context context) {
-        return this.d == null ? context.getString(2131492968) : this.d.a(context);
-    }
+//    public String a(Context context) {
+//        return this.d == null ? context.getString(2131492968) : this.d.a(context);
+//    }
 
     public void a(String str) {
         this.g = str;
